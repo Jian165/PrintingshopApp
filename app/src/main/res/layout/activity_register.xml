@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/Register_title"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.1"
+        android:text="Register"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="400dp"
+        android:layout_height="495dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_white"
+        app:layout_constraintEnd_toEndOf="@+id/Register_title"
+        app:layout_constraintStart_toStartOf="@+id/Register_title"
+        app:layout_constraintTop_toBottomOf="@+id/Register_title" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_LastName"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_editext_border"
+        android:hint="LastName"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_FirstName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_FirstName"
+        app:layout_constraintTop_toBottomOf="@+id/et_FirstName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_age"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_editext_border"
+        android:hint="Age"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_LastName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_LastName"
+        app:layout_constraintTop_toBottomOf="@+id/et_LastName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_Birthdate"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/login_editext_border"
+        android:editable="false"
+        android:hint="birthdate"
+        android:inputType="date"
+        android:paddingLeft="10dp"
+        android:paddingRight="33dp"
+        android:singleLine="true"
+        android:textColor="#201E1E"
+        app:layout_constraintBottom_toBottomOf="@+id/et_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/et_age"
+        app:layout_constraintTop_toTopOf="@+id/et_age"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_FirstName"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_editext_border"
+        android:hint=" First Name"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_R_Re_enterPassword"
+        app:layout_constraintStart_toStartOf="@+id/et_R_Re_enterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/et_R_Re_enterPassword" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_R_UserName"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/login_editext_border"
+        android:hint="Username"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@+id/Register_title"
+        app:layout_constraintStart_toStartOf="@+id/Register_title"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_R_Password"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_editext_border"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_R_UserName"
+        app:layout_constraintStart_toStartOf="@+id/et_R_UserName"
+        app:layout_constraintTop_toBottomOf="@+id/et_R_UserName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_R_Re_enterPassword"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_editext_border"
+        android:hint="Re-enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et_R_Password"
+        app:layout_constraintStart_toStartOf="@+id/et_R_Password"
+        app:layout_constraintTop_toBottomOf="@+id/et_R_Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Date"
+        android:layout_width="33dp"
+        android:layout_height="44dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_calendar"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/et_Birthdate"
+        app:layout_constraintEnd_toEndOf="@+id/et_Birthdate"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="@+id/et_Birthdate"
+        app:layout_constraintTop_toTopOf="@+id/et_Birthdate"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_backToLogin"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="back to login"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_age"
+        app:layout_constraintTop_toBottomOf="@+id/et_age"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Sign_in"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:background="@drawable/button_bg"
+        android:text="Sign-in"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_backToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toEndOf="@+id/btn_backToLogin"
+        app:layout_constraintTop_toTopOf="@+id/btn_backToLogin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/btn_see_password"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_R_Password"
+        app:layout_constraintEnd_toEndOf="@+id/et_R_Password"
+        app:layout_constraintHorizontal_bias="0.989"
+        app:layout_constraintStart_toStartOf="@+id/et_R_Password"
+        app:layout_constraintTop_toTopOf="@+id/et_R_Password"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/tx_errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:textSize="15dp"
+        android:textColor="#DF1212"
+        app:layout_constraintBottom_toBottomOf="@+id/et_R_UserName"
+        app:layout_constraintEnd_toEndOf="@+id/et_R_UserName"
+        app:layout_constraintStart_toStartOf="@+id/et_R_UserName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
